@@ -16,10 +16,10 @@ altura: float = 2.9 # pé direito padrão"""
 
 
 ##calc.area_paredes= (2*(largura + profundidade)* altura)
-print('A area das paredes tem ',calc.calcular_area_paredes(comodo),'m²')
+print('A area das paredes tem ',"{:.2f}".format(calc.calcular_area_paredes(comodo)),'m²')
 
 ##calc.area_teto = (largura * profundidade)
-print('A área do teto tem ', calc.calcular_area_teto(comodo),'m²')
+print('A área do teto tem ', "{:.2f}".format(calc.calcular_area_teto(comodo)),'m²')
 
 ##rend_tinta: float = (calc.area_paredes+calc.area_teto)/10
-print('A quantidade de tinta necessária é de',calc.litragem_necessaria(), 'litros.')
+print('A quantidade de tinta necessária é de',"{:.2f}".format(calc.litragem_necessaria()), 'litros.')
